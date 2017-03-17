@@ -55,10 +55,11 @@ public class MenuGame extends JFrame implements ActionListener{
 		}
 		
 		else if (e.getSource() == btChoiVoiNguoi) {
-			GuiNguoiNguoi guiNguoi = new GuiNguoiNguoi("Caro");
-			guiNguoi.setSize(850,650);
-			guiNguoi.setVisible(true);
-			guiNguoi.setResizable(false);
+			CheDoiNguoiNguoi nguoi = new CheDoiNguoiNguoi();
+			GuiNguoiNguoi g = nguoi.getGiaodien();
+			g.setSize(850,650);
+			g.setVisible(true);
+			g.setResizable(false);
 		}
 		
 		else if (e.getSource() == btThoat) {

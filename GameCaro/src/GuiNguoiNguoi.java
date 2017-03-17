@@ -6,18 +6,29 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+
+
 public class GuiNguoiNguoi extends Giaodiengame {
 	private JPanel panelDiem,panelButton;
 	private JLabel may,nguoi,diemMay,diemNguoi;
 	private JButton btTaoMoi,btDiLai,btTroLaiMenu,btThoat;
+	private int luot1;
 	
+	public int getLuot1() {
+		return luot1;
+	}
+
+	public void setLuot1(int luot1) {
+		this.luot1 = luot1;
+	}
+
 	public GuiNguoiNguoi(String title) {
 		super(title);
+		luot1 = 1;
 		panelDiem = new JPanel();
 		panelDiem.setBorder(BorderFactory.createTitledBorder("Điểm"));
 		panelDiem.setBounds(0, 0, 180, 150);
 		panelDiem.setLayout(null);
-		
 		
 		// set lable
 		may = new JLabel("Người 1:");
